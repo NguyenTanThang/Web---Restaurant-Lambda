@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #cc9900;
+    --default-trans: all 0.3s ease-out 0s;
+}
+
+/*************Header and Navigator***********/
+#header {
+    background-image: url("../img/banner-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+
+/*****Navigator****/
+.navbar {
+    background-color: transparent;
+    background-image: url("../img/nav-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-sm-container {
+    width: 100px;
+}
+
+.nav-item {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-item::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    opacity: 0;
+    transition: var(--default-trans);
+}
+
+.nav-item:hover::before {
+    opacity: 1;
+}
+
+.nav-sm-list li a {
+    color: var(--primary-color);
+}
+
+.nav-sm-list li a i {
+    font-size: 1.5em;
+}
+
+.nav-sm-container::before {
+    content: "";
+    width: 0%;
+    height: 0;
+}
+
+/*****Header*****/
+header {
+    padding-top: 30px;
+}
+
+header h1 {
+    font-size: 6em;
+}
+
+header .container>* {
+    margin-bottom: 30px;
+}
+
+header ul {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**************About***********/
+#about {
+    background-image: url("../img/dish-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/***********Ingredients***********/
+#ingredients {
+    background-image: url("../img/ingredients-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.ingredients-content {
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/***********Menu*********/
+#menu {
+    background-image: url("../img/dish-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.menu-content {
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+}
+
+.menu-item.special {
+    padding: 10px;
+    border: 1px solid rgba(204, 153, 0, 0.5);
+    position: relative;
+}
+
+.menu-item.special .special-note {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: #FFF;
+    position: absolute;
+    top: -35px;
+    right: 0;
+}
+
+.menu-item div {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(204, 153, 0, 0.5);
+}
+
+.menu-item p {
+    padding-top: 10px;
+}
+
+/***********Reviews**********/
+#reviews {
+    background-image: url("../img/reviews-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.review-content {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.review-content p.font-gentium {
+    font-size: 1.4em;
+    color: #dde0df;
+}
+
+/**********Reservation**********/
+#reservation {
+    background-image: url("../img/dish-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#reservation form .row>* {
+    margin-bottom: 20px;
+}
+
+/***********Footer*********/
+#footer {
+    background-color: #191919;
+}
+
+.footer-sm-list {
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
+}
+
+.footer-sm-list li a i {
+    color: #FFF;
+}
+
+.footer-sm-list li a:hover i {
+    color: var(--primary-color);
+}

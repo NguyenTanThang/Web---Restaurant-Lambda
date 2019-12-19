@@ -1,0 +1,141 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+/*Fonts*/
+.font-gentium{
+    font-family: 'Gentium Book Basic', serif;
+}
+
+.font-yeseva{
+    font-family: 'Yeseva One', cursive;
+}
+
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+
+/*Text Colors*/
+.text-color-primary{
+    color: var(--primary-color);
+}
+
+.text-color-white{
+    color: #FFF;
+}
+
+.text-color-black{
+    color: #000;
+}
+
+/*Buttons*/
+.btn{
+    padding: 15px 30px;
+    border-radius: 0;
+    font-family: 'Lato', sans-serif;
+    transition: var(--default-trans);
+}
+
+.btn-primary-color{
+    color: #FFF;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-primary-color:hover{
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
+.btn-blurred-black{
+    background-color: rgba(0,0,0,0.5);
+    color: #FFF;
+    border: 1px solid #000;
+}
+
+.btn-blurred-black:hover{
+    background-color: #FFF;
+    color: #000;
+}
+
+.btn-blurred-white{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.btn-blurred-white:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+/*Section*/
+.section-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Headers*/
+.section-header-primary{
+    margin-bottom: 20px;
+}
+
+.section-header-primary > *{
+    margin-bottom: 20px;
+}
+
+.section-header-primary h2{
+    color: var(--primary-color);
+    font-family: 'Yeseva One', cursive;
+}
+
+.section-header-white{
+    margin-bottom: 20px;
+}
+
+.section-header-white > *{
+    margin-bottom: 20px;
+}
+
+.section-header-white h2{
+    color: #FFF;
+    font-family: 'Yeseva One', cursive;
+}
+
+/*Flex*/
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Input*/
+.custom-input{
+    width: 100%;
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: #FFF;
+    transition: var(--default-trans);
+    color: grey;
+}
+
+.custom-input:focus{
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+.custom-input::placeholder{
+    color: grey;
+    font-style: italic;
+}
