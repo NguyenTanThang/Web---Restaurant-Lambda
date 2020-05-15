@@ -18,6 +18,24 @@
     background-image: url("../img/nav-bg.png");
     background-size: cover;
     background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: var(--default-trans);
+}
+
+.navbar-brand img{
+    transition: var(--default-trans) !important;
+}
+
+#my-nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+#my-nav.scrolled img{
+    transform: scale(0.7);
 }
 
 .nav-sm-container {
@@ -72,7 +90,7 @@
 
 /*****Header*****/
 header {
-    padding-top: 30px;
+    padding-top: 150px;
 }
 
 header h1 {

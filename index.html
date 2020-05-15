@@ -26,9 +26,9 @@
     <!-- Navigator and Header -->
     <section id="header">
         <!-- Navigator -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="my-nav">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#header">
                     <img src="img/logo.png" alt="" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -38,22 +38,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#header">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ingredients</a>
+                            <a class="nav-link" href="#ingredients">Ingredients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
+                            <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Reservation</a>
+                            <a class="nav-link" href="#reservation">Reservation</a>
                         </li>
                         <li class="nav-item nav-sm-container">
                             <ul class="nav-sm-list d-flex justify-content-between">
@@ -80,7 +80,7 @@
         </nav>
 
         <!-- Header -->
-        <header>
+        <header id="home">
             <div class="container text-center">
                 <h1 class="font-yeseva text-color-white">the right ingredients
                     for the right food</h1>
@@ -405,7 +405,7 @@
     <!-- Reservation -->
     <section id="reservation" class="section-padding">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between align-items-center">
 
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <img src="img/reserve-img-1.png" alt="" class="img-fluid">
@@ -556,8 +556,6 @@
         </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <script src="js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -567,6 +565,14 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/gumshoe.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        var spy = new Gumshoe('#my-nav a');
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 </body>
 

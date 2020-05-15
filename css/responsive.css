@@ -47,6 +47,10 @@
         font-size: 3.5em;
     }
 
+    #header {
+        height: 110vh;
+    }
+
     header .container ul li {
         width: 100%;
     }
@@ -62,4 +66,30 @@
     .footer-item {
         margin-bottom: 50px;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .nav-link {
+        padding: 0px;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .nav-sm-container li {
+        margin-right: 20px;
+    }
+
+    .nav-sm-container li a i {
+        font-size: 1.2rem;
+        color: #FFF;
+    }
+
+    .nav-item {
+        text-align: center;
+        width: 100%;
+        border-bottom: none;
+        margin-left: 20px;
+    }
+    
 }
